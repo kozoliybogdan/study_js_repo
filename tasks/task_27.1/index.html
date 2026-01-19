@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+
+    <section class="page">
+        <div class="slider" id="slider">
+            <button class="arrow arrow--left" data-prev aria-label="Previous">
+                &#8592;
+            </button>
+
+            <div class="slider__viewport">
+                <div class="slider__track">
+                    <div class="slide ph ph--1">
+                        <span>Slide 1</span>
+                    </div>
+                    <div class="slide ph ph--2">
+                        <span>Slide 2</span>
+                    </div>
+                    <div class="slide ph ph--3">
+                        <span>Slide 3</span>
+                    </div>
+                    <div class="slide ph ph--4">
+                        <span>Slide 4</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="arrow arrow--right" data-next aria-label="Next">
+                &#8594;
+            </button>
+
+            <div class="dots" data-dots></div>
+        </div>
+    </section>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
