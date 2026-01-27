@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-row">
+            <a class="back-link" href="./index.html">← Назад</a>
+            <h1 class="title">Деталі фільму</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="status">
+            <div id="loading" class="badge hidden">Завантаження...</div>
+            <div id="error" class="error hidden"></div>
+        </section>
+
+        <section id="movieDetails"></section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span>Дані: OMDb API</span>
+        </div>
+    </footer>
+
+    <script type="module" src="./scripts/movie.js"></script>
+</body>
+
+</html>
