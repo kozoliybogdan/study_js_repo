@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="title">🎬 Live пошук фільмів</h1>
+        <p class="subtitle">Почни вводити назву — обери варіант з підказок</p>
+
+        <div class="search">
+          <input
+            id="searchInput"
+            class="search__input"
+            type="text"
+            placeholder="Напр.: Cars, Fast, Spider-Man..."
+            autocomplete="off"
+          />
+          <div id="hint" class="search__hint">Мінімум 3 символи</div>
+          <div id="suggestions" class="suggestions hidden"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="status">
+        <div id="loading" class="badge hidden">Завантаження...</div>
+        <div id="error" class="error hidden"></div>
+      </section>
+
+      <section class="section-head">
+        <h2 class="section-title">🔥 Рекомендоване</h2>
+        <p class="section-subtitle">Натисни на картку — відкриються деталі</p>
+      </section>
+
+      <section>
+        <div id="featured" class="grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span>Дані: OMDb API</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>
